@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 function EmployeeForm({ setEmployees }) {
@@ -7,8 +6,6 @@ function EmployeeForm({ setEmployees }) {
     email: '',
     mobile: '',
     dob: '',
-    aadhar: '',
-    pan: '',
     address: '',
   });
 
@@ -34,8 +31,6 @@ function EmployeeForm({ setEmployees }) {
       <input name="email" placeholder="Email" type="email" required onChange={handleChange} /><br/>
       <input name="mobile" placeholder="Mobile Number" required onChange={handleChange} /><br/>
       <input name="dob" placeholder="DOB" type="date" required onChange={handleChange} /><br/>
-      <input name="aadhar" placeholder="AADHAR" required onChange={handleChange} /><br/>
-      <input name="pan" placeholder="PAN" required onChange={handleChange} /><br/>
       <textarea name="address" placeholder="Address" required onChange={handleChange} /><br/>
       <button type="submit">Register</button>
     </form>
